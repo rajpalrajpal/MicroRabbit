@@ -24,9 +24,9 @@ namespace MicroRabbit.Transfer.Data.Migrations
                         .ValueGeneratedOnAdd()
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<string>("FromAccount");
+                    b.Property<int>("FromAccount");
 
-                    b.Property<string>("ToAccount");
+                    b.Property<int>("ToAccount");
 
                     b.Property<decimal>("TransferAmount");
 
